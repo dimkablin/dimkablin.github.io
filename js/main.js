@@ -307,7 +307,6 @@
         ssMobileMenu();
         ssScrollSpy();
         ssSwiper();
-        ssLightbox();
         ssAlertBoxes();
         ssSmoothScroll();
         ssBackToTop();
