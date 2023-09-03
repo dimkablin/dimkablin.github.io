@@ -3883,7 +3883,7 @@ input[type="button"].btn--primary:focus {
 
 
 .s-portfolio__header {
-    padding-bottom: var(--vspace-5);
+    padding-bottom: var(--vspace-2);
 }
 
 /* ------------------------------------------------------------------- 
@@ -3949,6 +3949,13 @@ table tr td{
     padding-right: 0;
     margin-right: 0;
 
+}
+
+@media screen and (max-width: 768px) {
+    
+    .table-cell a p {
+        font-size: 13.5px;
+    }
 }
 
 /* ===================================================================
