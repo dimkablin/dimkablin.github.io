@@ -3873,131 +3873,69 @@ input[type="button"].btn--primary:focus {
 .s-portfolio {
     background-color: var(--color-gray-1);
     padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-5);
+    padding-bottom: calc(6 * var(--space));
+    text-align: center;
 }
 
 .s-portfolio h3 {
-    margin: 0;
+    margin-top: 0;
 }
 
+
 .s-portfolio__header {
-    text-align: center;
-    padding-bottom: var(--vspace-4);
+    padding-bottom: var(--gutter-mob);
 }
 
 /* ------------------------------------------------------------------- 
  * ## portfolio list
  * ------------------------------------------------------------------- */
-
-.folio-list {
-    max-width: 1180px;
-    margin-top: var(--vspace-2_5);
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.folio-item__thumb {
-    display: block;
-    background-color: white;
-    position: relative;
-    overflow: hidden;
-    padding: 0;
+td {
+  padding: 10px;
+  text-align: center;
 }
 
-.folio-item__thumb::before {
-    z-index: 1;
-    content: "";
-    display: block;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.table-cell {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Задайте желаемую высоту ячейки */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.table-cell p {
+  background-color: rgba(0, 0, 0, 0.5); /* Темная полупрозрачная пленка для текста */
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.table-cell p:hover {
+    color: var(--color-2);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.table-cell a p {
     width: 100%;
     height: 100%;
-    -webkit-transition: all, .5s;
-    transition: all, .5s;
-}
-
-.folio-item__thumb::after {
-    z-index: 1;
-    content: "...";
-    font-family: var(--font-2);
-    font-weight: 300;
-    font-size: 3rem;
-    color: white;
-    display: block;
-    height: 32px;
-    width: 32px;
-    line-height: 32px;
-    margin-left: -16px;
-    margin-top: -16px;
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: var(--text-lg);
 }
-
-.folio-item img {
-    display: block;
-    margin: 0;
-    -webkit-transition: all, .5s;
-    transition: all, .5s;
-}
-.column { 
-    padding: 0;
-}
-
-/* on hover
- *---------------------------------------------- */
-.folio-item:hover .folio-item__thumb::before {
-    opacity: 1;
-    visibility: visible;
-}
-
-.folio-item:hover .folio-item__thumb::after {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
-.folio-item:hover .folio-item__thumb img {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.block-2-3 .folio-item {
-    width: calc(33.33% - 20px); /* Adjust width to create 2 columns with some spacing */
-    height: auto;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    float: left;
-    position: relative;
-}
-
-.folio-item__thumb {
-    display: block;
-    background-color: white;
-    position: relative;
-    overflow: hidden;
-    padding: 0px; /* Add padding to each portfolio item */
-    transition: transform 0.5s ease; /* Add smooth transition for zoom effect */
-    padding: 0px;
-}
-
-.folio-item__thumb img {
-    max-width: 100%; /* Make sure the images don't exceed their containers */
-    height: auto; /* Maintain image aspect ratio */
-}
-
 
 
 /* ===================================================================

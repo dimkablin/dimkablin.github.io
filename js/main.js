@@ -330,7 +330,7 @@
         type();
     }
 
-    typewriterEffect('typewriter-heading', 200);
+    typewriterEffect('typewriter-heading', 250);
 
 
 })(document.documentElement);
