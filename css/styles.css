@@ -3883,7 +3883,7 @@ input[type="button"].btn--primary:focus {
 
 
 .s-portfolio__header {
-    padding-bottom: var(--gutter-mob);
+    padding-bottom: var(--vspace-5);
 }
 
 /* ------------------------------------------------------------------- 
@@ -3892,20 +3892,26 @@ input[type="button"].btn--primary:focus {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 0;
 }
 
 td {
   padding: 10px;
   text-align: center;
+  border: none;
 }
 
 .table-cell {
   position: relative;
   width: 100%;
-  height: 300px; /* Задайте желаемую высоту ячейки */
+  height: 300px; 
   background-size: cover;
   background-position: center;
   overflow: hidden;
+}
+
+.table-cell a img {
+    filter: blur(10px); 
 }
 
 .table-cell p {
@@ -3937,6 +3943,13 @@ td {
     font-size: var(--text-lg);
 }
 
+table tr td{
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+
+}
 
 /* ===================================================================
  * # testimonials
