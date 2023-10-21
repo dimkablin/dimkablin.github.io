@@ -3916,14 +3916,6 @@ input[type="button"].btn--primary:focus {
     color: white;
 }
 
-.portfolio-block__header-meta {
-    font-family: var(--font-2);
-    font-size: calc(var(--text-size) * 1.1111);
-    margin-top: -.4rem;
-    margin-bottom: var(--vspace-0_75);
-    color: white;
-}
-
 .portfolio-block__header-meta span {
     font-size: 0.8em;
     border: 2px solid var(--color-2); /* Цвет границы и толщина границы */
@@ -3940,250 +3932,6 @@ input[type="button"].btn--primary:focus {
     }
     .s-portfolio__section .column:first-child {
         text-align: center;
-    }
-}
-
-/* ------------------------------------------------------------------- 
- * ## portfolio list
- * ------------------------------------------------------------------- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 0;
-}
-
-td {
-  padding: 10px;
-  text-align: center;
-  border: none;
-}
-
-.table-cell {
-  position: relative;
-  width: 100%;
-  height: 300px; 
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.table-cell a img {
-    filter: blur(10px); 
-}
-
-.table-cell p {
-  background-color: rgba(0, 0, 0, 0.5); /* Темная полупрозрачная пленка для текста */
-  color: white;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  overflow: hidden;
-}
-
-.table-cell p:hover {
-    color: var(--color-2);
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-
-.table-cell a p {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    font-size: var(--text-lg);
-}
-
-table tr td{
-    padding-left: 0;
-    margin-left: 0;
-    padding-right: 0;
-    margin-right: 0;
-
-}
-
-@media screen and (max-width: 768px) {
-    
-    .table-cell a p {
-        font-size: 13.5px;
-    }
-}
-
-/* ===================================================================
- * # testimonials
- *
- * ------------------------------------------------------------------- */
-.s-testimonials {
-    padding-top: var(--vspace-5);
-    padding-bottom: var(--vspace-3_5);
-    color: rgba(255, 255, 255, 0.8);
-    background-color: var(--color-gray-19);
-    overflow: hidden;
-    position: relative;
-}
-
-.s-testimonials__bg {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/testimonials-bg-3000.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.s-testimonials__bg::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-gray-19);
-    opacity: .8;
-}
-
-.s-testimonials h3 {
-    margin-top: 0;
-    color: white;
-}
-
-.s-testimonials__header, .s-testimonials__content {
-    position: relative;
-}
-
-.s-testimonials__header {
-    text-align: center;
-    margin-bottom: var(--vspace-2);
-}
-
-.s-testimonials__content>.column:first-child {
-    min-height: 0;
-    min-width: 0;
-}
-
-/* ------------------------------------------------------------------- 
- * ## swiper style overrides
- * ------------------------------------------------------------------- */
-.s-testimonials .swiper-container {
-    padding-bottom: var(--vspace-2_5);
-}
-
-.s-testimonials .swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 9px;
-}
-
-.s-testimonials .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    background: white;
-    opacity: 0.4;
-}
-
-.s-testimonials .swiper-pagination-bullet-active {
-    background: var(--color-1);
-    opacity: 1;
-}
-
-/* ------------------------------------------------------------------- 
- * ## testimonial slider 
- * ------------------------------------------------------------------- */
-.testimonial-slider {
-    position: relative;
-}
-
-.testimonial-slider p {
-    font-weight: 400;
-    font-size: 1.7rem;
-    line-height: var(--vspace-1);
-}
-
-.testimonial-slider__slide {
-    position: relative;
-}
-
-.testimonial-slider__author {
-    display: inline-block;
-    min-height: var(--vspace-2);
-    margin-bottom: var(--vspace-0_5);
-    padding-left: 8.8rem;
-    position: relative;
-}
-
-.testimonial-slider__avatar {
-    width: var(--vspace-2);
-    height: var(--vspace-2);
-    border-radius: 100%;
-    outline: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.testimonial-slider__cite {
-    display: block;
-}
-
-.testimonial-slider__cite strong, 
-.testimonial-slider__cite span {
-    font-style: normal;
-}
-
-.testimonial-slider__cite strong {
-    font-size: calc(var(--text-size) * 0.944);
-    line-height: var(--vspace-0_5);
-    color: white;
-}
-
-.testimonial-slider__cite span {
-    display: block;
-    font-size: calc(var(--text-size) * 0.778);
-    font-weight: 300;
-    line-height: var(--vspace-0_5);
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * testimonials
- * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
-    .testimonial-slider__slide {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .testimonial-slider__author {
-        padding-left: 6.8rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .testimonial-slider__author {
-        padding-left: 0;
-        margin-bottom: var(--vspace-0_5);
-        min-height: 0;
-        text-align: center;
-    }
-    .testimonial-slider__avatar {
-        display: inline-block !important;
-        margin: 0;
-        position: static;
     }
 }
 
@@ -4207,7 +3955,7 @@ table tr td{
     color: white;
     margin-top: 0;
     font-weight: 400;
-    font-size: 4.6rem;
+    font-size: 4.3rem;
     line-height: 1.304;
 }
 
@@ -4268,13 +4016,13 @@ table tr td{
         text-align: center;
     }
     .s-contact .huge-text {
-        font-size: 4.2rem;
+        font-size: 4rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     .s-contact .huge-text {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
     .contact-block {
         font-size: 2.6rem;
@@ -4286,7 +4034,7 @@ table tr td{
 
 @media screen and (max-width: 400px) {
     .s-contact .huge-text {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     .contact-block {
         font-size: 2.2rem;
@@ -4298,7 +4046,7 @@ table tr td{
 
 @media screen and (max-width: 360px) {
     .s-contact .huge-text {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 }
 
