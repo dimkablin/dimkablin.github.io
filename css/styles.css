@@ -3357,6 +3357,12 @@ input[type="button"].btn--primary:focus {
     background-size: cover;
 }
 
+@media screen and (max-width: 700px) {
+    .s-hero__bg {
+        background-image: url(../images/wallpaper-minimalistic-vert.jpg);
+    }
+}
+
 
 
 .s-hero__bg::before {
@@ -3890,6 +3896,8 @@ input[type="button"].btn--primary:focus {
     color: white;
 }
 
+
+
 .s-portfolio__header {
     padding-bottom: var(--vspace-2);
 }
@@ -3924,6 +3932,15 @@ input[type="button"].btn--primary:focus {
     margin: 4px; /* Отступ вокруг элемента */
     display: inline-block; /* Сделать элемент блочным, чтобы работало закругление углов */
     color: var(--color-2);
+}
+
+@media screen and (max-width: 800px) {
+    .s-portfolio {
+        padding-top: var(--vspace-4);
+    }
+    .s-portfolio__section .column:first-child {
+        text-align: center;
+    }
 }
 
 /* ------------------------------------------------------------------- 

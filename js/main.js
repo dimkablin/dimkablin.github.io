@@ -314,10 +314,15 @@
     })();
 
 
+    let isTyping = false; // Флаг для отслеживания выполнения эффекта
+
     function typewriterEffect(elementId, speed) {
+        if (isTyping) return; // Если уже выполняется, игнорировать повторный вызов
+        isTyping = true; // Установить флаг в true
+
         const element = document.getElementById(elementId);
         const textContent = element.textContent;
-        element.innerHTML = ""
+        element.innerHTML = "";
 
         let charIndex = 0;
         const type = () => {
@@ -325,12 +330,20 @@
                 element.innerHTML += textContent.charAt(charIndex);
                 charIndex++;
                 setTimeout(type, speed);
+            } else {
+                isTyping = false; // Эффект завершен, сбросить флаг
             }
         };
         type();
     }
 
-    typewriterEffect('typewriter-heading', 220);
+    document.addEventListener("DOMContentLoaded", function() {
+        const header = document.getElementById("typewriter-heading");
 
+        header.addEventListener("click", function() {
+            typewriterEffect('typewriter-heading', 80);
+        });
+    });
 
+    typewriterEffect('typewriter-heading', 120);
 })(document.documentElement);
