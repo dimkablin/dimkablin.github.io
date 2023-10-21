@@ -3874,19 +3874,56 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-portfolio {
-    background-color: var(--color-gray-1);
+    --color-border: var(--color-gray-16);
+    background-color: var(--color-gray-17);
     padding-top: calc(6 * var(--space));
-    padding-bottom: calc(6 * var(--space));
-    text-align: center;
+    padding-bottom: var(--vspace-4);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .s-portfolio h3 {
     margin-top: 0;
+    color: white;
 }
 
+.s-portfolio h4 {
+    color: white;
+}
 
 .s-portfolio__header {
     padding-bottom: var(--vspace-2);
+}
+
+.portfolio-block {
+    margin-bottom: var(--vspace-1_75);
+}
+
+.portfolio-block h4 {
+    line-height: 1.080;
+    margin-top: 0;
+    margin-bottom: var(--vspace-0_25);
+}
+
+.portfolio-block__header {
+    color: white;
+}
+
+.portfolio-block__header-meta {
+    font-family: var(--font-2);
+    font-size: calc(var(--text-size) * 1.1111);
+    margin-top: -.4rem;
+    margin-bottom: var(--vspace-0_75);
+    color: white;
+}
+
+.portfolio-block__header-meta span {
+    font-size: 0.8em;
+    border: 2px solid var(--color-2); /* Цвет границы и толщина границы */
+    border-radius: 5px; /* Закругление углов */
+    padding: 0 4px 0 4px; /* Отступ внутри элемента */
+    margin: 4px; /* Отступ вокруг элемента */
+    display: inline-block; /* Сделать элемент блочным, чтобы работало закругление углов */
+    color: var(--color-2);
 }
 
 /* ------------------------------------------------------------------- 
