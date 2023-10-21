@@ -2214,8 +2214,8 @@ button:focus,
 input[type="submit"]:focus, 
 input[type="reset"]:focus, 
 input[type="button"]:focus {
-    background-color: var(--color-btn-hover);
-    border-color: var(--color-btn-hover);
+    background-color: var(--color-2);
+    border-color: var(--color-2);
     color: var(--color-btn-hover-text);
     outline: 0;
 }
@@ -2246,6 +2246,7 @@ input[type="button"].btn--primary:focus {
     border-color: var(--color-btn-primary-hover);
     color: var(--color-btn-primary-hover-text);
 }
+
 
 /* button modifiers
  * ------------------------------------------------- */
@@ -3350,11 +3351,13 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/space-bg-2.gif);
+    background: url(../images/wallpaper-minimalistic.jpg);
     background-repeat: no-repeat;
-    background-position: center 90%;
+    background-position: center;
     background-size: cover;
 }
+
+
 
 .s-hero__bg::before {
     display: block;
@@ -3367,7 +3370,7 @@ input[type="button"].btn--primary:focus {
     width: 100%;
     height: 100%;
     background: black;
-    opacity: .5;
+    opacity: .4;
 }
 
 .s-hero__bg::after {
