@@ -3473,7 +3473,7 @@ input[type="button"].btn--primary:focus {
 
 .s-hero__content-social a:hover, 
 .s-hero__content-social a:focus {
-    color: var(--color-1);
+    color: var(--color-2-light);
 }
 
 .s-hero__content-social a:last-child {
@@ -3738,8 +3738,8 @@ input[type="button"].btn--primary:focus {
 
 .s-about__content-bottom .btn--download:hover, 
 .s-about__content-bottom .btn--download:focus {
-    background-color: var(--color-2);
-    border-color: var(--color-2);
+    background-color: var(--color-1);
+    border-color: var(--color-1);
 }
 
 .s-about__content-bottom .btn--download:hover svg path, 
@@ -4102,7 +4102,7 @@ input[type="button"].btn--primary:focus {
 
 .s-footer__social a:focus, 
 .s-footer__social a:hover {
-    color: var(--color-1);
+    color: var(--color-2);
 }
 
 .s-footer__social li {
