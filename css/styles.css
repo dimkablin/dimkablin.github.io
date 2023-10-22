@@ -97,10 +97,7 @@
  * ## colors
  * ------------------------------------------------------------------- */
 :root {
-    /* color-1(#11ABB0)
-     * color-2(#F06000)
-     */
-    --color-1: hsla(228, 100%, 84%, 1);
+    --color-1: hsla(0, 100%, 70%, 1);
     --color-2: hsla(258, 100%, 80%, 1);
 
     /* theme color variations
@@ -3476,7 +3473,7 @@ input[type="button"].btn--primary:focus {
 
 .s-hero__content-social a:hover, 
 .s-hero__content-social a:focus {
-    color: var(--color-2-light);
+    color: var(--color-1);
 }
 
 .s-hero__content-social a:last-child {
@@ -3926,6 +3923,11 @@ input[type="button"].btn--primary:focus {
     color: var(--color-2);
 }
 
+.portfolio-block__header-meta .meta-comp {
+    border: 2px solid var(--color-1); 
+    color: var(--color-1);
+}
+
 @media screen and (max-width: 800px) {
     .s-portfolio {
         padding-top: var(--vspace-4);
@@ -4073,7 +4075,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .s-footer a:hover, .s-footer a:focus {
-    color: var(--color-2);
+    color: var(--color-1);
 }
 
 /* ------------------------------------------------------------------- 
@@ -4100,7 +4102,7 @@ input[type="button"].btn--primary:focus {
 
 .s-footer__social a:focus, 
 .s-footer__social a:hover {
-    color: var(--color-2);
+    color: var(--color-1);
 }
 
 .s-footer__social li {
@@ -4175,7 +4177,7 @@ input[type="button"].btn--primary:focus {
 
 .ss-go-top a:hover, 
 .ss-go-top a:focus {
-    background-color: var(--color-1);
+    background-color: var(--color-2);
 }
 
 .ss-go-top svg {
